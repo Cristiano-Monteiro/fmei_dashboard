@@ -1,0 +1,40 @@
+.mainNavbar{
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.mainNavbar figure{
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+}
+
+.mainNavbar figure img{
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px){
+    .mainNavbar{
+        width: 8rem;
+        height: 100vh;
+        justify-content: center;
+        align-items: initial;
+        padding: 1.5rem 0rem;
+    }
+
+    .mainNavbar figure::after{
+        content: '';
+        display: block;
+        width: 6rem;
+        height: .2rem;
+        background-color: #fff;
+        position: absolute;
+        bottom: -1rem;
+        left: -1rem;
+        border-radius: 5rem;
+    }
+}

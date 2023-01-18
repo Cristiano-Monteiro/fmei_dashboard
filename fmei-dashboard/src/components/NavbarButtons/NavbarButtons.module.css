@@ -1,0 +1,11 @@
+.navbarButtons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbarButtons{
+        display: inline-block;
+    }
+}
