@@ -4,6 +4,31 @@
     width: 100%;
 }
 
+.navbarButtons li{
+    cursor: pointer;
+}
+
+.navbarButtons li img{
+    width: 80%;
+    animation: btnAnimation .5s forwards;
+}
+
+.navbarButtons li:hover{
+    animation: btnAnimation .5s ease-in-out;
+}
+
+@keyframes btnAnimation{
+    0%{
+        transform: translateY(0px);    
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .navbarButtons{
         display: inline-block;

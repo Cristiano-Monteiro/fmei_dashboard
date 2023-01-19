@@ -1,13 +1,17 @@
+import Container from "./components/Container/Container";
+
 import MainNavbar from "./components/MainNavbar/MainNavbar";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
+import MainContent from "./components/MainContent/MainContent";
+
 
 function App() {
   return (
-    <main>
+    <Container>
       <MainNavbar/>
-      {/* MainContent */}
+      <MainContent/>
       <MobileNavbar/>
-    </main>
+    </Container>
   );
 };
 

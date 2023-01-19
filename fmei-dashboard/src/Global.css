@@ -8,9 +8,10 @@
 :root{
   font-size: 16px;
   --main-color: #0B0F99;
+  --main-border-radius: 2rem;
 }
 
-body,
-html{
+body, html{
+  width: 100vw;
   height: 100vh;
 }
