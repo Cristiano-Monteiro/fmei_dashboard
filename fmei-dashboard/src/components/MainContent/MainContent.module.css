@@ -2,52 +2,6 @@
     width: 100%;
     height: 100%;
     background-color: #ddd;
-}
-
-.chartContainer{
-    width: 100%;
-    height: auto;
-    border: 2px solid red;
-}
-
-.text{
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: .5rem 1rem;
-}
-
-.text img{
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-}
-
-.charts{
-    display: flex;
-    width: 100%;
-    height: 20vh;
-    gap: 2rem;
-    
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-.chart{
-    display: flex;
-    min-width: 80%;
-    height: 100%;
-    text-align: center;
-    border: 1px solid;
-    border-radius: var(--main-border-radius);
-
-    scroll-snap-align: center;
-}
-
-.chart:first-child{
-    margin-left: 10vw;
-}
-
-.chart:last-child{
-    margin-right: 10vw;
+    flex-direction: column;
 }
