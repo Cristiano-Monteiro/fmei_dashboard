@@ -14,7 +14,7 @@ function MainCharts(){
                 </div>
                 <div className={styles.charts}>
                     {chartsId.map((id) => {
-                        return <div className={styles.chart} id={id}></div>
+                        return <div className={styles.chart} id={id} key={id}></div>
                     })}
                 </div>
             </section>

@@ -2,10 +2,10 @@ import styles from './MobileNavbar.module.css';
 
 import NavbarButtons from '../NavbarButtons/NavbarButtons';
 
-function MobileNavbar(){
+function MobileNavbar({showModal}){
     return(
         <nav className={styles.mobileNavbar}>
-            <NavbarButtons/>
+            <NavbarButtons showModal={showModal}/>
         </nav>
     )
 };
