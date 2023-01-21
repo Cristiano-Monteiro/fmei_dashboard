@@ -5,15 +5,15 @@ import statsIcon from '../../assets/icons/query_stats.svg';
 function FinancialInformation(){
     return(
         <>
-            <section className={styles.chartContainer}>
+            <section className={styles.financialInformationContainer}>
                 <div className={styles.text}>
                     <img src={statsIcon} alt="Ícone da seção de informações" />
                     <h1>Informações</h1>
                 </div>
-                <div className={styles.charts}>
-                    <div className={styles.chart}></div>
-                    <div className={styles.chart}></div>
-                    <div className={styles.chart}></div>
+                <div className={styles.financialInformationWrapper}>
+                    <div className={styles.financialInformation}></div>
+                    <div className={styles.financialInformation}></div>
+                    <div className={styles.financialInformation}></div>
                 </div>
             </section>
         </>

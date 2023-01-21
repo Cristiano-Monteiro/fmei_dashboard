@@ -1,4 +1,4 @@
-.chartContainer{
+.financialInformationContainer{
     width: 100%;
     height: 60%;
     padding-top: .5rem;
@@ -18,7 +18,7 @@
     background-color: var(--secondary-color);
 }
 
-.charts{
+.financialInformationWrapper{
     display: flex;
     width: 100%;
     height: 100%;
@@ -29,25 +29,25 @@
     scroll-behavior: smooth;
 }
 
-.charts::-webkit-scrollbar{
+.financialInformationWrapper::-webkit-scrollbar{
     display: none;
 }
 
-.chart{
+.financialInformation{
     display: flex;
     min-width: 80%;
     height: 100%;
     text-align: center;
-    border: 1px solid;
     border-radius: var(--main-border-radius);
+    background-color: var(--secondary-color);
 
     scroll-snap-align: center;
 }
 
-.chart:first-child{
+.financialInformation:first-child{
     margin-left: 10vw;
 }
 
-.chart:last-child{
+.financialInformation:last-child{
     margin-right: 10vw;
 }

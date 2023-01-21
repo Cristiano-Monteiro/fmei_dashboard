@@ -6,15 +6,25 @@
 
 .navbarButtons li{
     cursor: pointer;
+    width: 4.5rem;
+    height: 100%;
+    padding: .6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .navbarButtons li img{
-    width: 80%;
+    width: 100%;
+    animation: btnAnimation .5s forwards;
+}
+
+.navbarButtons li img:hover{
     animation: btnAnimation .5s forwards;
 }
 
 .navbarButtons li:hover{
-    animation: btnAnimation .5s ease-in-out;
+    background-color: var(--secondary-color);
 }
 
 @keyframes btnAnimation{
