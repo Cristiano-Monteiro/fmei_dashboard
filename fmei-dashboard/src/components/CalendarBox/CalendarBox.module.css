@@ -27,7 +27,7 @@
 
 .calendarBoxContent figure{
     display: flex;
-    width: 50%;
+    width: 70%;
     max-width: 10rem;
     position: absolute;
     top: -4rem;

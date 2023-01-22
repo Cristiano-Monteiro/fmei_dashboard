@@ -10,8 +10,8 @@
 
 .inputFileBoxContent{
     width: 80%;
-    max-width: 45rem;
-    height: 50%;
+    max-width: 35rem;
+    height: 20rem;
     padding: 1rem;
     border-radius: var(--main-border-radius);
     background-color: var(--main-color);
@@ -21,16 +21,19 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    position: relative;
 }
 
 /*== Icons styles ==*/
 
 .uploadFileIcon{
-    width: 40%;
+    width: 65%;
     max-width: 10rem;
     display: flex;
     justify-content: center;
     animation: inputFileBoxAnimation .8s ease-in-out;
+    position: absolute;
+    top: -4rem;
 }
 
 .uploadFileIcon img{
