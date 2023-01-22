@@ -11,23 +11,26 @@
 .calendarBoxContent{
     width: 80%;
     max-width: 40rem;
-    height: 60%;
-    padding: 1rem;
+    height: 23rem;
+    padding: 0 1rem 2rem;
     border-radius: var(--main-border-radius);
     background-color: var(--main-color);
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
 
     animation: CalendarBoxAnimation .5s ease-in-out;
 }
 
 .calendarBoxContent figure{
     display: flex;
-    width: 40%;
+    width: 50%;
     max-width: 10rem;
+    position: absolute;
+    top: -4rem;
 
     animation: CalendarBoxAnimation .8s ease-in-out;
 }

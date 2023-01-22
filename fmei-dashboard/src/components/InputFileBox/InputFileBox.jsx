@@ -12,10 +12,10 @@ function InputFileBox(){
                 </figure>
                 <h2>Adicione sua Tabela</h2>
                 <div className={styles.inputContainer}>
-                    <input type="file" name="dataTable" id="fileInput" />
                     <figure className={styles.attachFileAddIcon}>
                         <img src={attachFileAddIcon} alt="Ícone de anexar arquivo" />
                     </figure>
+                    <input type="file" name="dataTable" id="fileInput" />
                 </div>
             </div>
         </div>

@@ -42,7 +42,6 @@
     margin-left: .5rem;
     display: flex;
     justify-content: center;
-    order: 1;
 }
 
 .attachFileAddIcon img{
@@ -72,7 +71,6 @@
     border-radius: var(--main-border-radius);
     color: #fff;
     width: 100%;
-    order: 2;
 }
 
 @keyframes inputFileBoxAnimation {
