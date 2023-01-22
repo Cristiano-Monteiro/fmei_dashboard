@@ -2,10 +2,10 @@ import styles from './MobileNavbar.module.css';
 
 import NavbarButtons from '../NavbarButtons/NavbarButtons';
 
-function MobileNavbar({showModal}){
+function MobileNavbar({showInputFileBox}){
     return(
         <nav className={styles.mobileNavbar}>
-            <NavbarButtons showModal={showModal}/>
+            <NavbarButtons showInputFileBox={showInputFileBox}/>
         </nav>
     )
 };

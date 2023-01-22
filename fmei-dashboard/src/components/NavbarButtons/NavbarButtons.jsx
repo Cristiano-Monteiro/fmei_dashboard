@@ -4,8 +4,7 @@ import homeIcon from '../../assets/icons/home_icon.svg';
 import calendarIcon from '../../assets/icons/calendar_icon.svg';
 import addIcon from '../../assets/icons/add_icon.svg';
 
-
-function NavbarButtons({showModal}){
+function NavbarButtons({showInputFileBox}){
     return(
         <ul className={styles.navbarButtons}>
             <li>
@@ -15,7 +14,7 @@ function NavbarButtons({showModal}){
                 <img 
                     src={addIcon} 
                     alt="Ícone de adição da tabela de dados" 
-                    onClick={showModal}
+                    onClick={showInputFileBox}
                 />
             </li>
             <li>

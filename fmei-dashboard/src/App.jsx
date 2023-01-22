@@ -5,22 +5,21 @@ import Container from "./components/Container/Container";
 import MainNavbar from "./components/MainNavbar/MainNavbar";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import MainContent from "./components/MainContent/MainContent";
-import ModalBox from "./components/ModalBox/ModalBox";
-
+import InputFileBox from "./components/InputFileBox/InputFileBox";
 
 function App() {
   const [boxAddTable, setBoxAddTable] = useState(false);
 
-  function showModal(){
-    setBoxAddTable(true);
+  function showInputFileBox(){
+    setBoxAddTable(!boxAddTable);
   };
 
   return (
     <Container>
       <MainNavbar/>
       <MainContent/>
-      <MobileNavbar showModal={showModal}/>
-      {boxAddTable && <ModalBox/>}
+      <MobileNavbar showInputFileBox={showInputFileBox}/>
+      {boxAddTable && <InputFileBox/>}
     </Container>
   );
 };
