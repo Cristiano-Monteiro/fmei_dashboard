@@ -22,6 +22,11 @@ function App() {
     setBoxAddTable(false);
   };
 
+  function backToHome(){
+    setBoxAddTable(false);
+    setCalendarBox(false);
+  };
+
   return (
     <Container>
       <MainNavbar/>
@@ -29,6 +34,7 @@ function App() {
       <MobileNavbar 
         showInputFileBox={showInputFileBox}
         showCalendarBox={showCalendarBox}
+        backToHome={backToHome}
       />
       {boxAddTable && <InputFileBox/>}
       {calendarBox && <CalendarBox/>}

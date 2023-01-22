@@ -15,7 +15,7 @@
     padding: 1rem;
     border-radius: var(--main-border-radius);
     background-color: var(--main-color);
-    animation: inputFileBoxAnimation .5s ease-in-out forwards;
+    animation: inputFileBoxAnimation .5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@
     max-width: 10rem;
     display: flex;
     justify-content: center;
-    animation: inputFileBoxAnimation .5s ease-in-out forwards;
+    animation: inputFileBoxAnimation .8s ease-in-out;
 }
 
 .uploadFileIcon img{

@@ -6,17 +6,16 @@ function CalendarBox(){
     return(
         <div className={styles.calendarBoxContainer}>
             <div className={styles.calendarBoxContent}>
+                <figure>
+                    <img src={dateRangeIcon} alt="Ícone de intervalo de datas" />
+                </figure>
+                <h2>Filtre suas informações</h2>
                 <div className={styles.inputDateContainer}>
-                    <figure>
-                        <img src={dateRangeIcon} alt="Ícone de escolha de datas no calendário" />
-                    </figure>
-                    <input type="date" name="inputDate" id="inputDate" />
-                </div>
-                <div className={styles.inputDateContainer}>
-                    <figure>
-                        <img src={dateRangeIcon} alt="Ícone de escolha de datas no calendário" />
-                    </figure>
-                    <input type="date" name="inputDate" id="inputDate" />
+                    <form>
+                        <input type="date" name="inputDateStart" id="inputDateStart" />
+                        <input type="date" name="inputDateEnd" id="inputDateEnd" />
+                        <input type="submit" value="Enviar" />
+                    </form>
                 </div>
             </div>
         </div>
