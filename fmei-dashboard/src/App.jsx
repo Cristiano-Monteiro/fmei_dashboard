@@ -29,7 +29,11 @@ function App() {
 
   return (
     <Container>
-      <MainNavbar/>
+      <MainNavbar
+        showInputFileBox={showInputFileBox}
+        showCalendarBox={showCalendarBox}
+        backToHome={backToHome}
+      />
       <MainContent/>
       <MobileNavbar 
         showInputFileBox={showInputFileBox}

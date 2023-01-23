@@ -18,13 +18,19 @@
     width: 100%;
 }
 
+.navbarButtons{
+    display: none;
+    width: 80%;
+    height: 100%;
+}
+
 @media screen and (min-width: 1024px){
     .mainNavbar{
         width: 8rem;
-        height: 100vh;
+        height: 100%;
+        flex-direction: column;
         justify-content: center;
-        align-items: initial;
-        padding: 1.5rem 0rem;
+        padding: 1.5rem 1rem;
     }
 
     .mainNavbar figure::after{
@@ -37,5 +43,9 @@
         bottom: -1rem;
         left: -1rem;
         border-radius: 5rem;
+    }
+
+    .navbarButtons{
+        display: flex;
     }
 }

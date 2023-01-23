@@ -23,6 +23,10 @@
     animation: btnAnimation .5s forwards;
 }
 
+.navbarButtons li:active{
+    animation: btnAnimationDesktop .25s ease-in-out;
+}
+
 .navbarButtons li:hover{
     background-color: var(--secondary-color);
 }
@@ -39,8 +43,28 @@
     }
 }
 
+@keyframes btnAnimationDesktop {
+    0%{
+        transform: translateX(0px);    
+    }
+    50%{
+        transform: translateX(15px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .navbarButtons{
-        display: inline-block;
+        flex-direction: column;
+        justify-content: start;
+        gap: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    .navbarButtons li{
+        width: 100%;
+        height: auto;
     }
 }
