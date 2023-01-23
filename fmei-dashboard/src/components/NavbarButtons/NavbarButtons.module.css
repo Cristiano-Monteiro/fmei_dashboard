@@ -16,15 +16,15 @@
 
 .navbarButtons li img{
     width: 100%;
-    animation: btnAnimation .5s forwards;
+    animation: btnAnimation .5s ease-in-out;
 }
 
 .navbarButtons li img:hover{
-    animation: btnAnimation .5s forwards;
+    animation: btnAnimation .5s ease-in-out;
 }
 
 .navbarButtons li:active{
-    animation: btnAnimationDesktop .25s ease-in-out;
+    animation: btnAnimation .2s ease-in-out;
 }
 
 .navbarButtons li:hover{
@@ -66,5 +66,9 @@
     .navbarButtons li{
         width: 100%;
         height: auto;
+    }
+
+    .navbarButtons li:active{
+        animation: btnAnimationDesktop .25s ease-in-out;
     }
 }
