@@ -10,7 +10,7 @@
 
 .inputFileBoxContent{
     width: 80%;
-    max-width: 35rem;
+    max-width: 30rem;
     height: 20rem;
     padding: 1rem;
     border-radius: var(--main-border-radius);

@@ -2,13 +2,15 @@
     width: 100vw;
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
-    display: grid;
-    grid-template-rows: .1fr 1fr .1fr;
+/*     display: grid;
+    grid-template-rows: .1fr 1fr .1fr; */
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 805px) {
     .container{
-        display: flex;
+        flex-direction: row;
     }    
 }

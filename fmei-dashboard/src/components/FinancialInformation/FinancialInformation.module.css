@@ -56,18 +56,36 @@
     margin-right: 10vw;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 450px) {
+    .financialInformationWrapper{
+        padding: 0 4rem;
+    }
+
+    .financialInformation{
+        min-width: 70%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .financialInformationWrapper{
+        padding: 0 8rem;
+    }
+}
+
+@media screen and (min-width: 805px) {
     .financialInformationContainer{
         height: 30%;
     }
 
     .financialInformationWrapper{
         padding: 0 1rem;
+        justify-content: center;
     }
 
     .financialInformation{
         width: 100%;
         min-width: 0;
+        max-width: 25rem;
     }
 
     .financialInformation:first-child{

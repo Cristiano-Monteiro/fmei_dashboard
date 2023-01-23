@@ -56,7 +56,7 @@
     margin-right: 10vw;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 805px) {
 /*     .chartContainer{
         min-height: 65rem;
     } */
@@ -73,7 +73,7 @@
     .chart{
         width: 49%;
         min-width: 0;
-        height: 90%;
+        height: 60%;
     }
 
     .chart:first-child{
@@ -82,5 +82,11 @@
     
     .chart:last-child{
         margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1124px) {
+    .chart{
+        height: 90%;
     }
 }

@@ -55,7 +55,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 805px) {
     .navbarButtons{
         flex-direction: column;
         justify-content: start;
