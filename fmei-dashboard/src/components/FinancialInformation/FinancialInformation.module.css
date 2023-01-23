@@ -4,6 +4,7 @@
     padding-top: .5rem;
     display: flex;
     flex-direction: column;
+    min-height: 12rem;
 }
 
 .text{
@@ -11,11 +12,14 @@
     align-items: center;
     gap: 1rem;
     padding: .5rem 1rem;
+    color: #555;
 }
 
 .text img{
     border-radius: 50%;
     background-color: var(--secondary-color);
+    height: 90%;
+    min-height: 2rem;
 }
 
 .financialInformationWrapper{
@@ -50,4 +54,27 @@
 
 .financialInformation:last-child{
     margin-right: 10vw;
+}
+
+@media screen and (min-width: 768px) {
+    .financialInformationContainer{
+        height: 30%;
+    }
+
+    .financialInformationWrapper{
+        padding: 0 1rem;
+    }
+
+    .financialInformation{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .financialInformation:first-child{
+        margin-left: 0;
+    }
+    
+    .financialInformation:last-child{
+        margin-right: 0;
+    }
 }
