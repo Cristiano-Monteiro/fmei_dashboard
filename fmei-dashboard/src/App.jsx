@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import Container from "./components/Container/Container";
 
+import OpeningScreen from "./components/OpeningScreen/OpeningScreen";
+
 import MainNavbar from "./components/MainNavbar/MainNavbar";
 import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 import MainContent from "./components/MainContent/MainContent";
@@ -29,6 +31,7 @@ function App() {
 
   return (
     <Container>
+      <OpeningScreen/>
       <MainNavbar
         showInputFileBox={showInputFileBox}
         showCalendarBox={showCalendarBox}
