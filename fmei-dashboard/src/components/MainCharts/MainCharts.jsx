@@ -1,9 +1,14 @@
+import Highcharts from 'highcharts'
+import HighchartsReact from 'highcharts-react-official'
+
 import styles from './MainCharts.module.css';
 
 import barChartIcon from '../../assets/icons/bar_chart.svg';
 
+import chartList from '../ChartExamples/ChartExamples';
+
 function MainCharts(){
-    const chartsId = ['chart1','chart2','chart3','chart4'];
+    console.log(chartList);
 
     return(
         <>
@@ -13,8 +18,15 @@ function MainCharts(){
                     <h1>Gráficos</h1>
                 </div>
                 <div className={styles.charts}>
-                    {chartsId.map((id) => {
-                        return <div className={styles.chart} id={id} key={id}></div>
+                    {chartList.map((options) => {
+                        return (
+                            <HighchartsReact
+                                highcharts={Highcharts}
+                                options={options}
+                                containerProps={{className: styles.chart}}
+                                key={options.key}
+                            />
+                        )
                     })}
                 </div>
             </section>
