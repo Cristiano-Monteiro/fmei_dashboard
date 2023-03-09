@@ -84,44 +84,6 @@ export const FinancialInformationContent = styled.div`
     }
 `;
 
-export const PageNavbar = styled.nav`
-    width: 100%;
-    height: 45rem;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-
-    div{
-        width: 85%;
-        max-width: 25rem;
-        padding: 4rem 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        background-color: var(--white);
-        border-radius: var(--border-radius);
-        text-align: center;
-
-        cursor: pointer;
-    }
-
-    div figure{
-        width: 8rem;
-        max-width: 5rem;
-    }
-
-    div h2{
-        font-size: 1.5rem;
-        font-weight: 900;
-        color: var(--main-color);
-        width: min-content;
-    }
-`;
-
 export const ToolsNavbar = styled.nav`
     width: 100%;
     height: auto;
